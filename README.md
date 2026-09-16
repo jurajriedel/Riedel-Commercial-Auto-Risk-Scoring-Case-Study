@@ -9,7 +9,7 @@ I also found inconsistent categorical values and multiple rows for the same insu
 
 With only around 12% of policies having a claim, and a small number of large losses strongly affecting `total_loss_amount`, I decided to focus on predicting the probability of a claim rather than the loss amount itself.
 
-I reviewed the original prototype notebook (`risk_scorer.ipynb`) and rewrote it as a more modular Python script (`Riedel_Juraj_case_study.py`). One of the main issues I found was that the prototype used post-outcome fields as model features — variables that are only populated after a claim has been reported or resolved. This would cause target leakage, so these fields were removed from the final model.
+I reviewed the original prototype notebook (`risk_scorer.ipynb`) and rewrote it as a more modular Python script (`Riedel_Juraj_case_study.py`). One of the main issues I found was that the prototype used post-outcome fields as model features — variables that are only available after a claim has been reported or resolved. This would cause target leakage, so these fields were removed from the final model.
 
 ## Key Assumptions
 
