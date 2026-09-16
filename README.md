@@ -107,6 +107,7 @@ production.
 **Modeling & validation**
 - Test additional models such as XGBoost, LightGBM, or CatBoost, and evaluate whether separate APD and AL models perform better than the current pooled approach.
 - Re-validate the calibration approach (isotonic vs. sigmoid) on a larger and more recent dataset, rather than relying on a one-off comparison.
+- Evaluate splitting APD/AL into separate models
 
 **Explainability & fairness**
 - Add per-prediction explanations (e.g. SHAP) so an individual policy's score can be justified, not just the aggregate feature ranking already produced.
@@ -124,8 +125,7 @@ production.
 
 Claude (Anthropic) was used as an AI assistant throughout this project — to review the
 original prototype and help identify the data leakage and validation issues discussed above,
-and to support the development of the Python script and EDA notebook. It was also used to
-help refine parts of the documentation and as a sounding board for some of the technical
-decisions, though every suggestion was checked against the actual dataset and code before
-being incorporated. All final code, analysis, and conclusions in this submission were
+and to support the development of the Python script and EDA notebook. It was also used to improve parts of the documentation and to 
+discuss some of the technical decisions made during the project, though every suggestion was checked against the actual dataset and 
+code before being incorporated. All final code, analysis, and conclusions in this submission were
 reviewed and are understood by me.
